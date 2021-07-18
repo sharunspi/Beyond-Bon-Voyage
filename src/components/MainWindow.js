@@ -4,10 +4,11 @@ import Seat from './forms/Seat'
 import To from './forms/To'
 import Vehicle from './forms/Vehicle'
 import Modal from './Modal'
+import {from} from '../data.json'
 export default function MainWindow() {
     const [currentStage,setCurrentStage] = useState(1)
     const [username,setUsername] = useState('')
-    const [from,setFrom] = useState('')
+    const [froms,setFrom] = useState('')
     const [to,setTo] = useState('')
     const [seatNo,setSeatNo] = useState(1)
     const [vehicle,setVehicle] = useState('')
@@ -20,8 +21,9 @@ export default function MainWindow() {
     const onChangeName= name =>{
         setUsername(name)
     }
-    const onChangeUserFrom =from=>{
-        setFrom(from)
+    const onChangeUserFrom =fro=>{
+        
+        setFrom(from.filter(f=>f.id ==fro)[0].name)
     }
     const onChangeSeat = seat =>{
         setSeatNo(seat)
@@ -51,7 +53,7 @@ export default function MainWindow() {
                </>
                 break;
             case 5 : return <>
-                <Modal name={username} fromLoc={from} toLoc={to} seatNumber={seatNo} vehicleIs={vehicle}/>
+                <Modal name={username} fromLoc={froms} toLoc={to} seatNumber={seatNo} vehicleIs={vehicle}/>
                </>
                 break;    
             default : return ''

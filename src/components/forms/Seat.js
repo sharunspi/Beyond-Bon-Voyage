@@ -1,10 +1,11 @@
 import React, { useState } from 'react'
 const seats =[
-    'seat1',
-    'seat2',
-    'seat3',
-    'seat4',
-    'seat5'
+    'Seat 1',
+    'Seat 2',
+    'Seat 3',
+    'Seat 4',
+    'Seat 5',
+    'Seat 6'
 ]
 export default function Seat(props) {
     const [seletctedSeat,setSelectedSeat] = useState(0)

@@ -4,8 +4,10 @@ import Footer from '../Footer'
 export default function From(props) {
     const [userFrom,setUserFrom] = useState('')
     const [user,setUser] = useState('')
+    const [showNextBtn,setShowNextBtn] = useState(false)
     const selected = (urfrom)=>{
         setUserFrom(urfrom.id)
+        setShowNextBtn(true)
     }
     const stepChange = ste =>{
         props.changedName(user)
@@ -57,7 +59,7 @@ export default function From(props) {
                 }
             </div>
             <div className="footer">
-                    <button onClick={()=>stepChange(props.id)} >
+                    <button disabled={!showNextBtn} onClick={()=>stepChange(props.id)} >
                         Next
                     </button>
             </div>

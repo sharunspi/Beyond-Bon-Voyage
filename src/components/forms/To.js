@@ -14,13 +14,20 @@ export default function To(props) {
         return <>
             <div onClick={()=>newPlanet(props.name)}>
                 <img className={planetSelected == props.name ? "planet select-planet":"planet"} src={planetImage}/>
+                <hr>
+                   
+                </hr>
+                {props.name}
             </div>
         </>
     }
     return (
         <div>
-            <div>
             <label id="goingTo">Going to  </label>
+            <div style={{
+                display:'flex'
+            }}>
+            
                 {
                     expolanents.map(planet=>{
                         return <Planet name={planet.name}/>
