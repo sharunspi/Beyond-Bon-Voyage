@@ -1,6 +1,10 @@
 import React from 'react'
 import {from} from '../../data.json'
-export default function From() {
+import Footer from '../Footer'
+export default function From(props) {
+    const stepChange = ste =>{
+        props.nextStep(ste)
+    }
     const SuggestCard = (props)=>{
         return <>
            <div className='card-suggestion'>
@@ -28,7 +32,7 @@ export default function From() {
                 }
             </div>
             <div className="footer">
-                    <button >
+                    <button onClick={()=>stepChange(props.id)} >
                         Next
                     </button>
             </div>
