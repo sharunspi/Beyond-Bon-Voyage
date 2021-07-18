@@ -28,7 +28,7 @@ export default function From() {
                 }
             </div>
             <div className="footer">
-                    <button>
+                    <button >
                         Next
                     </button>
             </div>

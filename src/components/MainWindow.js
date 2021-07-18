@@ -4,7 +4,7 @@ import Seat from './forms/Seat'
 import To from './forms/To'
 export default function MainWindow() {
     const [currentStage,setCurrentStage] = useState(1)
-
+    
     return (
   <div className="main-window">
             <div className='main-card'>
