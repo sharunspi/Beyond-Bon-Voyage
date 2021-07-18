@@ -122,3 +122,10 @@ button{
 .vehicle-selected{
   border: 2px solid #333;
 }
+.planet{
+  width: 24%;
+  cursor: pointer;
+}
+.select-planet{
+  border: 2px solid #333;
+}
