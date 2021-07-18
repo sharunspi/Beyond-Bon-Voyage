@@ -96,3 +96,22 @@ button{
 .from-country{
   margin-top: 24px;
 }
+.card-selected{
+  border: 2px solid #fff;
+}
+.seat{
+  width: 40px;
+  height: 40px;
+  z-index: +1;
+  border: 2px solid #fff;
+  margin: 6px;
+  text-align: center;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.seta-selected{
+  background-color: blue;
+}
+.seatbench{
+  display: flex;
+}

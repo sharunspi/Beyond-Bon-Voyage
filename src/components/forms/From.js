@@ -11,7 +11,8 @@ export default function From(props) {
     }
     const SuggestCard = (props)=>{
         return <>
-           <div className='card-suggestion' onClick={()=>selected(props.data)}>
+           <div className={userFrom == props.data.id ? 'card-suggestion card-selected':'card-suggestion'} onClick={()=>selected(props.data)}>
+
                 <div className='from-country'>
                 {
                     props.data.country
