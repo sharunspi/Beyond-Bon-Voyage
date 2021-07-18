@@ -9,6 +9,7 @@ const seats =[
 export default function Seat(props) {
     const [seletctedSeat,setSelectedSeat] = useState(0)
     const stepChange = stp =>{
+        props.seatIs(seletctedSeat)
         props.nextStep(stp)
     }
     // const SeatsList = ()=>{

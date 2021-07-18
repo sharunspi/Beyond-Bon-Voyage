@@ -8,6 +8,8 @@ export default function From(props) {
         setUserFrom(urfrom.id)
     }
     const stepChange = ste =>{
+        props.changedName(user)
+        props.userFromTheList(userFrom)
         props.nextStep(ste)
     }
     const search = ev =>{
@@ -33,11 +35,17 @@ export default function From(props) {
            </div>
         </>
     }
-    
+    const usernameChange = name =>{
+        setUser(name)
+        
+    }
     return (
         <div>
              <label id="userName">Name  </label>
-            <input type="text" id="fromInputUser" onChange={e=>setUser(e.target.value)}/>
+            <input type="text" onChange={e=>{
+                usernameChange(e.target.value)
+                console.log(e.target.value)
+            }}/>
             <label id="from">Going from  </label>
     
             <div id="suggestions" className="suggestions">

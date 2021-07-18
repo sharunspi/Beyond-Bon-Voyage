@@ -6,32 +6,52 @@ import Vehicle from './forms/Vehicle'
 import Modal from './Modal'
 export default function MainWindow() {
     const [currentStage,setCurrentStage] = useState(1)
+    const [username,setUsername] = useState('')
+    const [from,setFrom] = useState('')
+    const [to,setTo] = useState('')
+    const [seatNo,setSeatNo] = useState(1)
+    const [vehicle,setVehicle] = useState('')
     const stepChanged = step=>{
         setCurrentStage(currentStage+1)
     }
     const reset =()=>{
         setCurrentStage(1)
     }
+    const onChangeName= name =>{
+        setUsername(name)
+    }
+    const onChangeUserFrom =from=>{
+        setFrom(from)
+    }
+    const onChangeSeat = seat =>{
+        setSeatNo(seat)
+    }
+    const onChangeSelectedVehicle = vehi =>{
+        setVehicle(vehi)
+    }
+    const onChangeSelectedPlanet = plane =>{
+        setTo(plane)
+    }
     const DisplayForm = ()=>{
         switch (currentStage){
             case 1 : return <>
-             <From id={currentStage} nextStep={stepChanged}/>
+             <From userFromTheList={onChangeUserFrom} changedName={onChangeName} id={currentStage} nextStep={stepChanged}/>
             </>
                 break;
             case 2 : return <>
-                <Seat id={currentStage} nextStep={stepChanged}/>
+                <Seat seatIs={onChangeSeat} id={currentStage} nextStep={stepChanged}/>
                </>
                 break;
             case 3 : return <>
-                <Vehicle id={currentStage} nextStep={stepChanged}/>
+                <Vehicle selectedVehicleIs={onChangeSelectedVehicle} id={currentStage} nextStep={stepChanged}/>
                </>
                 break;    
             case 4 : return <>
-                <To id={currentStage} nextStep={stepChanged}/>
+                <To selectedPlanet={onChangeSelectedPlanet} id={currentStage} nextStep={stepChanged}/>
                </>
                 break;
             case 5 : return <>
-                <Modal/>
+                <Modal name={username} fromLoc={from} toLoc={to} seatNumber={seatNo} vehicleIs={vehicle}/>
                </>
                 break;    
             default : return ''

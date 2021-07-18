@@ -4,6 +4,7 @@ import planetImage from '../../assets/images/planet.png'
 export default function To(props) {
     const [planetSelected,setPlanetSelected] = useState('')
     const stepChange = stp =>{
+        props.selectedPlanet(planetSelected)
         props.nextStep(stp)
     }
     const newPlanet = pln=>{

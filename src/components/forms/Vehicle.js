@@ -4,6 +4,7 @@ import rocket from '../../assets/images/rocket.png'
 export default function Vehicle(props) {
     const [selectedVehicle,setSelectedVehicle] = useState('')
     const stepChange = stp =>{
+        props.selectedVehicleIs(selectedVehicle)
         props.nextStep(stp)
     }
     const newVehicle =(newV)=>{
