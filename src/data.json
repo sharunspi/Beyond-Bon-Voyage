@@ -19,5 +19,11 @@
             },
             "image":"../src/assets/images/french.jpg"
         }
+    ],
+    "vehicles":[
+        {
+            "name":"Falcon",
+            "image":""
+        }
     ]
 }

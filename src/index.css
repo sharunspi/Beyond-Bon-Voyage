@@ -115,3 +115,10 @@ button{
 .seatbench{
   display: flex;
 }
+.vehicle{
+  width: 24%;
+  cursor: pointer;
+}
+.vehicle-selected{
+  border: 2px solid #333;
+}
