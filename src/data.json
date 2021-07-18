@@ -1,6 +1,7 @@
 {
     "from": [
         {
+            "id":1,
             "country": "French Algeria",
             "name": "Interarmy Special Vehicles Test Centre (CIEES)",
             "gps": {
@@ -9,6 +10,7 @@
             },
             "image":"../src/assets/images/french.jpg"
         }, {
+            "id":2,
             "country": "Egypt",
             "name": "Jabal Hamzah ballistic missile test and launch facility",
             "gps": {

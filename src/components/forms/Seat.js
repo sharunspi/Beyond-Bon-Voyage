@@ -1,9 +1,17 @@
 import React from 'react'
 
-export default function Seat() {
+export default function Seat(props) {
+    const stepChange = stp =>{
+        props.nextStep(stp)
+    }
     return (
         <div>
-            Seat
+            
+               <div className="footer">
+                    <button onClick={()=>stepChange(props.id)} >
+                        Next
+                    </button>
+            </div>
         </div>
     )
 }

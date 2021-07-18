@@ -1,12 +1,12 @@
 import React from 'react'
 
-export default function To(props) {
+export default function Vehicle(props) {
     const stepChange = stp =>{
         props.nextStep(stp)
     }
     return (
         <div>
-            to
+            vehicle
                  <div className="footer">
                     <button onClick={()=>stepChange(props.id)} >
                         Next
