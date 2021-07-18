@@ -20,7 +20,7 @@ header{
 }
 .main-card{
   width: 90%;
-  height: 500px;
+  height: 600px;
   position: absolute;
   display: flex;
   z-index: +5;
@@ -45,7 +45,7 @@ label{
   color: #fff;
 }
 .suggestions{
-  margin-top: 6%;
+  margin-top: 2%;
   display: flex;
 }
 .card-suggestion{
@@ -64,7 +64,7 @@ label{
   box-shadow: 2px 2px 2px 2px rgba(0,0,0, 0.2);
 }
 button{
-  padding: 4px 12px;
+  padding: 8px 22px;
   margin-top: 14px;
   font-size: 1.4em;
   background-color: #667EEA;
@@ -128,4 +128,32 @@ button{
 }
 .select-planet{
   border: 2px solid #333;
+}
+.newticket{
+  border-radius: 50%;
+  height: 52px;
+  width: 52px;
+  background-color: tomato;
+  color: white;
+  font-size: 2em;
+  position: absolute;
+  margin-left: 93%;
+  margin-top: 26%;
+  z-index: +20;
+  cursor: pointer;
+  text-align: center;
+}
+.newticket:hover{
+  transition: 1.1s ease-out;
+  box-shadow: -2rem 2rem 2rem rgba(0,0,0, 0.2);
+  filter: blur(0);
+  transform: scale(1);
+}
+span{
+  display: block;
+}
+.suggest{
+  margin-top: 12px;
+  margin-bottom: 12px;
+  color: #f1f1f1;
 }

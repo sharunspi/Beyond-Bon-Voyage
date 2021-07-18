@@ -9,7 +9,9 @@ export default function MainWindow() {
     const stepChanged = step=>{
         setCurrentStage(currentStage+1)
     }
-
+    const reset =()=>{
+        setCurrentStage(1)
+    }
     const DisplayForm = ()=>{
         switch (currentStage){
             case 1 : return <>
@@ -38,6 +40,9 @@ export default function MainWindow() {
     }
     return (
   <div className="main-window">
+      <div className="newticket" onClick={()=>reset()}>
+            +
+      </div>
             <div className='main-card'>
             <div className='container'>
                     <DisplayForm/>

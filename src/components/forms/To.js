@@ -27,7 +27,7 @@ export default function To(props) {
             </div>
                  <div className="footer">
                     <button onClick={()=>stepChange(props.id)} >
-                        Next
+                        Next 
                     </button>
             </div>
         </div>
