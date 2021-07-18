@@ -79,7 +79,7 @@ button{
   position: relative;
   width: 19%;
 }
-.modal{
+/* .modal{
   width: 500px;
   background: tomato;
   border: 1px solid #fff;
@@ -89,7 +89,7 @@ button{
   transform: scale(1);
   opacity: 1;
   visibility: visible;
-}
+} */
 .hr-width{
   width: 80%;
 }
@@ -156,4 +156,30 @@ span{
   margin-top: 12px;
   margin-bottom: 12px;
   color: #f1f1f1;
+}
+.name{
+  margin-left: 23%;
+  margin-top: 14%;
+  position: absolute;
+  font-size: 2em;
+}
+.starting-location{
+  position: absolute;
+  margin-top: 18%;
+  margin-left: 23%;
+}
+.vehicle-po{
+  position: absolute;
+  margin-top: 22%;
+  margin-left: 35%;
+}
+.endinglocation{
+  position: absolute;
+  margin-top: 18%;
+  margin-left: 34%;
+}
+.seatNo{
+  position: absolute;
+margin-left: 53%;
+margin-top: 18%;
 }

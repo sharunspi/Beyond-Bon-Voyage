@@ -25,6 +25,7 @@ export default function Seat(props) {
         <div>
             <div>
                 {/* <SeatsList/> */}
+                <label id="seat">Select seat  </label>
                 <div className='seatbench'>
                 {
                   seats.map(seat=>{

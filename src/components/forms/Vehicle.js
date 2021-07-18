@@ -20,6 +20,7 @@ export default function Vehicle(props) {
     return (
         <div>
             <div>
+            <label id="vehicle">Select vehicle  </label>
                 {
                     vehicles.map(vehi=>{
                         return <Card name={vehi.name} />

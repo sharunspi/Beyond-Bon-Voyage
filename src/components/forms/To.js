@@ -19,6 +19,7 @@ export default function To(props) {
     return (
         <div>
             <div>
+            <label id="goingTo">Going to  </label>
                 {
                     expolanents.map(planet=>{
                         return <Planet name={planet.name}/>

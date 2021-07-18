@@ -39,11 +39,7 @@ export default function From(props) {
              <label id="userName">Name  </label>
             <input type="text" id="fromInputUser" onChange={e=>setUser(e.target.value)}/>
             <label id="from">Going from  </label>
-            <input type="text"  id="fromInput" onChange={e=>search(e.target.value)}/>
-            <div className="suggest">
-                    suggestions
-                    
-                </div>
+    
             <div id="suggestions" className="suggestions">
             
                 {
